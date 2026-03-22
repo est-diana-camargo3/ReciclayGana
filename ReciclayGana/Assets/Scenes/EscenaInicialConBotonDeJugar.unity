@@ -1401,7 +1401,7 @@ GameObject:
   - component: {fileID: 1964033780}
   - component: {fileID: 1964033779}
   m_Layer: 0
-  m_Name: MenuEscenaInicialConBotonDeJugarManager
+  m_Name: ManagerDeBotonesEscenaInicial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
