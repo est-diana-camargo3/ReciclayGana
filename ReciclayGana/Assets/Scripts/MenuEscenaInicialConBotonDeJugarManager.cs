@@ -12,5 +12,14 @@ public class MenuEscenaInicialConBotonDeJugarManager : MonoBehaviour
     {
         SceneManager.LoadScene("EscenaDeInstrucciones");
     }
+
+    public void IrASalir()
+    {
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
+    }
 }
 
