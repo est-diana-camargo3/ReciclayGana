@@ -1,10 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class MenuEscenaInicialConBotonDeJugarManager: MonoBehaviour
+
+public class MenuEscenaInicialConBotonDeJugarManager : MonoBehaviour
 {
-public void Jugar()
-{
-SceneManager.LoadScene("EscenadeJuego");
-}
+    public void IrAJugar()
+    {
+        SceneManager.LoadScene("EscenadeJuego");
+    }
+
+    public void IrAInstrucciones()
+    {
+        SceneManager.LoadScene("EscenaDeInstrucciones");
+    }
 }
 
