@@ -740,7 +740,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1964033779}
-        m_TargetAssemblyTypeName: MenuEscenaInicialConBotonDeJugarManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: ManagerDeBotonesEscenaInicial, Assembly-CSharp
         m_MethodName: IrAInstrucciones
         m_Mode: 1
         m_Arguments:
