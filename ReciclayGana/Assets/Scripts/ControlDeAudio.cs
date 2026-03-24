@@ -12,8 +12,10 @@ public class ControlDeAudio : MonoBehaviour
     void Awake()
     {
         instancia = this;
-    }
 
+        // 🔥 CLAVE: no destruir al cambiar de escena
+        DontDestroyOnLoad(gameObject);
+    }
     public void SonidoExito()
     {
         audioSource.PlayOneShot(sonidoDeExito);

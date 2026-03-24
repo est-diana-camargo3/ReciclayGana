@@ -5,8 +5,8 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - audioSource: {instanceID: 0}
-  - sonidoDeExito: {fileID: 8300000, guid: 2b3b0be61a6dd6b4bb7a32bd70467c48, type: 3}
-  - sonidoDeError: {fileID: 8300000, guid: 06c06632053db09459d7dfe7072965d4, type: 3}
+  - sonidoDeExito: {instanceID: 0}
+  - sonidoDeError: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -13,6 +13,14 @@ public class ObjetoMalo : MonoBehaviour
     if (other.CompareTag("Player"))
     {
         Debug.Log("TOCO PLAYER");
+        Debug.Log("MI SCRIPT NUEVO");
+
+        // 🔊 Reproducir sonido (solo si existe)
+        if (ControlDeAudio.instancia != null)
+        {
+            ControlDeAudio.instancia.SonidoError();
+            Debug.Log("ENTRO AL IF DE CONTROL DE AUDIO");
+        }
 
         SceneManager.LoadScene("EscenaDeHasPerdido");
     }
