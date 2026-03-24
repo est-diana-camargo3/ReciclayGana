@@ -4,17 +4,10 @@ using System.Collections;
 
 public class ObjetoMalo : MonoBehaviour
 {
-    private bool yaPerdio = false;
-
     private void OnTriggerEnter2D(Collider2D other)
 {
-    Debug.Log("COLISION DETECTADA");
-
     if (other.CompareTag("Player"))
     {
-        Debug.Log("TOCO PLAYER");
-        Debug.Log("MI SCRIPT NUEVO");
-
         // 🔊 Reproducir sonido (solo si existe)
         if (ControlDeAudio.instancia != null)
         {

@@ -10,7 +10,7 @@ public class ManagerDeBotonesEscenaDeGanaste : MonoBehaviour
         #else           
         Application.Quit();        
         #endif    
-}
+    }
 }
 
 

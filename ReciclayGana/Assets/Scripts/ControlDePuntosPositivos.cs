@@ -1,3 +1,5 @@
+using UnityEngine.SceneManagement;
+using System.Collections;
 using UnityEngine;
 using TMPro;
 
@@ -17,6 +19,16 @@ public class ControlDePuntos : MonoBehaviour
     {
         puntos++;
         TextoPuntos.text = "Puntos: " + puntos;
+
+        Debug.Log("Puntos actuales: " + puntos);
+
+        // 🎯 CONDICIÓN DE GANAR
+        if (puntos >= 8)
+        {
+            Debug.Log("GANASTE");
+
+            SceneManager.LoadScene("EscenaDeGanaste");
+        }
     }
 }
 
