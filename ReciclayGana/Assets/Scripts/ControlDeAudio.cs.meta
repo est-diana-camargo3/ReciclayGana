@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 51c5fa168a8df51428d6f5a70faf6cdd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - audioSource: {instanceID: 0}
+  - sonidoDeExito: {fileID: 8300000, guid: 2b3b0be61a6dd6b4bb7a32bd70467c48, type: 3}
+  - sonidoDeError: {fileID: 8300000, guid: 06c06632053db09459d7dfe7072965d4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
