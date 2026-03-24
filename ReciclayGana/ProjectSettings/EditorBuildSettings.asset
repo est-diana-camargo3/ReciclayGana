@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaDeInstrucciones.unity
     guid: 55d447d348ec2ca4fad3881433ba0cae
+  - enabled: 1
+    path: Assets/Scenes/EscenaDeHasPerdido.unity
+    guid: 6d473afdfb178154f94b686be8f3790b
   m_configObjects: {}

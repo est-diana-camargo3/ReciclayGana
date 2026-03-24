@@ -1,15 +1,27 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
 public class ObjetoMalo : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("PERDISTE");
+    private bool yaPerdio = false;
 
-            // Reiniciar escena
-            UnityEngine.SceneManagement.SceneManager.LoadScene("EscenaDeJuego");
-        }
+    private void OnTriggerEnter2D(Collider2D other)
+{
+    Debug.Log("COLISION DETECTADA");
+
+    if (other.CompareTag("Player"))
+    {
+        Debug.Log("TOCO PLAYER");
+
+        SceneManager.LoadScene("EscenaDeHasPerdido");
+    }
+}
+
+    IEnumerator IrAEscenaDeHasPerdido()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("EscenaDeHasPerdido");
     }
 }
 
