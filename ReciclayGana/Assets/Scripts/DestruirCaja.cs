@@ -6,7 +6,7 @@ public class Recolectable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            ControlDePuntos.instancia.SumarPunto();
+            ControlDePuntosPositivos.instancia.SumarPunto();
 
             // 🔊 SONIDO DE EXITO
             ControlDeAudio.instancia.SonidoExito();

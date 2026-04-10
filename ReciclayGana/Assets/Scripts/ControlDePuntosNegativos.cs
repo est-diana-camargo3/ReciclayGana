@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class ObjetoMalo : MonoBehaviour
+public class ControlDePuntosNegativos : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
 {

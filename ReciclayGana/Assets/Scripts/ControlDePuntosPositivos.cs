@@ -3,9 +3,9 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class ControlDePuntos : MonoBehaviour
+public class ControlDePuntosPositivos : MonoBehaviour
 {
-    public static ControlDePuntos instancia;
+    public static ControlDePuntosPositivos instancia;
 
     public int puntos = 0;
     public TextMeshProUGUI TextoPuntos;
