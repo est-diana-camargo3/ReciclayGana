@@ -6,12 +6,19 @@ public class MovimientoPersonaje : MonoBehaviour
 
     public Sprite frente;
     public Sprite espalda;
-    public Sprite derecha;
-    public Sprite izquierda;
+
+    // 🔥 AHORA SON LISTAS (arrays)
+    public Sprite[] derechaAnim;
+    public Sprite[] izquierdaAnim;
+
+    public float tiempoAnimacion = 0.15f; // velocidad del "caminar"
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Vector2 movimiento;
+
+    private float contadorTiempo;
+    private int indiceSprite;
 
     void Start()
     {
@@ -32,27 +39,61 @@ public class MovimientoPersonaje : MonoBehaviour
 
         movimiento = new Vector2(movX, movY).normalized;
 
-        // Cambiar sprite según dirección
+        // 🔥 ANIMACIÓN DERECHA
         if (movX > 0)
         {
-            sr.sprite = derecha;
+            Animar(derechaAnim);
         }
+        // 🔥 ANIMACIÓN IZQUIERDA
         else if (movX < 0)
         {
-            sr.sprite = izquierda;
+            Animar(izquierdaAnim);
         }
         else if (movY > 0)
         {
             sr.sprite = espalda;
+            ResetAnimacion();
         }
         else if (movY < 0)
         {
             sr.sprite = frente;
+            ResetAnimacion();
+        }
+        else
+        {
+            // 🔥 QUIETO → vuelve al primer sprite
+            ResetAnimacion();
         }
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movimiento * velocidad * Time.fixedDeltaTime);
+    }
+
+    // 🔥 FUNCIÓN DE ANIMACIÓN
+    void Animar(Sprite[] animacion)
+    {
+        contadorTiempo += Time.deltaTime;
+
+        if (contadorTiempo >= tiempoAnimacion)
+        {
+            contadorTiempo = 0f;
+            indiceSprite++;
+
+            if (indiceSprite >= animacion.Length)
+            {
+                indiceSprite = 0;
+            }
+
+            sr.sprite = animacion[indiceSprite];
+        }
+    }
+
+    // 🔥 REINICIAR ANIMACIÓN
+    void ResetAnimacion()
+    {
+        contadorTiempo = 0f;
+        indiceSprite = 0;
     }
 }
