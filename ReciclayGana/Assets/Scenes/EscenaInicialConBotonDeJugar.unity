@@ -632,8 +632,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1964033779}
-        m_TargetAssemblyTypeName: MenuEscenaInicialConBotonDeJugarManager, Assembly-CSharp
-        m_MethodName: IrAJugar
+        m_TargetAssemblyTypeName: ManagerDeBotonesEscenaInicial, Assembly-CSharp
+        m_MethodName: IrAInstrucciones
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1943,9 +1943,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4d6bd23a30695374b8139f9ed1224ff6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a89adba6a2267834b951ec139cf96e95, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.184
+  m_Volume: 0.073
   m_Pitch: 1
   Loop: 1
   Mute: 0

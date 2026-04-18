@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class ManagerDeBotonesEscenadeinstrucciones: MonoBehaviour
 {
-public void IrAEscenaInicial()   {   SceneManager.LoadScene("EscenaInicialConBotonDeJugar");   }
+public void IrAJugar()   {       SceneManager.LoadScene("EscenadeJuego");    }
+
 }
 
