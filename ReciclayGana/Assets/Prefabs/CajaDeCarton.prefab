@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9107643373689822518}
   - component: {fileID: 1979799767204388456}
   - component: {fileID: 4785368888145821616}
+  - component: {fileID: 7394097902236828533}
   m_Layer: 0
   m_Name: CajaDeCarton
   m_TagString: Untagged
@@ -164,3 +165,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2675f084e55ef641a59561d1e5d76e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7394097902236828533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196635801175991530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91f6bf3dc14181469f158ddf5c20764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  "tama\xF1oMin": 0.15
+  "tama\xF1oMax": 0.2
